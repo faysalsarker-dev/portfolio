@@ -1,18 +1,41 @@
-.secondary{
-  color: #7127BA;
+
+.secondary {
+  background: linear-gradient(135deg, #03DAC5, #018786);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.text-primary{
-  color: #302EFD;
+
+.gradient{
+  background: linear-gradient(135deg, #6200EE, #BB86FC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-primary {
+  background: linear-gradient(135deg, #BB86FC, #6200EE);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .drawer-icon {
   display: inline-block;
   transition: transform 0.3s;
 }
+.gradient-border {
+  border: 1px solid;
+  border-image-source: linear-gradient(135deg, #BB86FC, #6200EE);
+  border-image-slice: 1;
+  border-radius: 100%  !important;
+ 
+
+  
+}
+
 
 .rotate {
   transform: rotate(45deg);
 }
-
+h1, h2, h3, h4, h5, h6 {
+  color: #E0E0E0;
+}
 
 
 .hero-content {
@@ -25,37 +48,39 @@
   height: 20.125rem;
   border-radius: 50%;
   position: absolute;
-  background-color: #753BAB;
-  box-shadow: 0 0 60px 20px #3D1C69;
-  filter: blur(30px);
+  background: linear-gradient(135deg, #BB86FC, #6200EE);
+
+  filter: blur(225px);
   z-index: -1;
-  top: 3rem;
-  left: 6rem;
+  top: -2rem;
+  left: -3rem;
   transform: translate(-50%, -50%);
 }
-.hero-content-img::after  {
+.hero-content-image::after{
   content: "";
-  width: 28.125rem;
-  height: 28.125rem;
+  width: 20.125rem;
+  height: 20.125rem;
   border-radius: 50%;
   position: absolute;
-  background-color: #718fdd;
-  box-shadow: 0 0 60px 20px #718fdd;
-  filter: blur(30px);
+  background: linear-gradient(135deg, #BB86FC, #6200EE);
+
+  /* filter: blur(225px); */
   z-index: -1;
-  right: -5rem;
-  bottom: -5rem;
+  top: -2rem;
+  left: -3rem;
   transform: translate(-50%, -50%);
 }
+
+
 .skill-content::after {
   content: "";
   width: 28.125rem;
   height: 28.125rem;
   border-radius: 50%;
   position: absolute;
-  background-color: #718fdd;
-  box-shadow: 0 0 60px 20px #718fdd;
-  filter: blur(30px);
+  background: linear-gradient(135deg, #BB86FC, #6200EE);
+ 
+  filter: blur(225px);
   z-index: -1;
   top: 50%;
   left: 50%;
