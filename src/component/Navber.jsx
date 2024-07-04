@@ -27,34 +27,34 @@ const Navbar = () => {
     }, [drawerOpen]);
 
     return (
-        <div className="container backdrop-blur-md py-4 px-4 sticky top-0 z-10 mt-5 bg-transparent">
+        <div className="container text-white backdrop-blur-md py-4  sticky top-0 z-50 bg-transparent">
             <div className="flex justify-between items-center blur-0 ">
-                <div className='text-3xl font-extrabold text-gray-800'>
+                <div className='text-3xl font-extrabold text-white'>
                     Faysal<span className="text-primary"> Sarker</span>
                 </div>
-                <div className="hidden md:flex items-center gap-6">
+                <div className="hidden md:flex items-center gap-6 ">
                     <NavLink
                         to='/'
                         className={({ isActive }) =>
-                            isActive ? "text-primary border-b-2 border-blue-600 transform transition-all duration-300 pb-1" : "text-gray-800 hover:text-primary"
+                            isActive ? "text-primary border-b-2 gradient-border-b transform transition-all duration-300 pb-1" : "text-white hover:text-primary"
                         }
                     >Home</NavLink>
                     <NavLink
                         to='/about'
                         className={({ isActive }) =>
-                            isActive ? "text-primary border-b-2 border-blue-600 transform transition-all duration-300 pb-1" : "text-gray-800 hover:text-primary"
+                            isActive ? "text-primary border-b-2 gradient-border-b transform transition-all duration-300 pb-1" : "text-white hover:text-primary"
                         }
                     >About Me</NavLink>
                     <NavLink
                         to='/projects'
                         className={({ isActive }) =>
-                            isActive ? "text-primary border-b-2 border-blue-600 transform transition-all duration-300 pb-1" : "text-gray-800 hover:text-primary"
+                            isActive ? "text-primary border-b-2 gradient-border-b transform transition-all duration-300 pb-1" : "text-white hover:text-primary"
                         }
                     >Projects</NavLink>
                     <NavLink
                         to='/blog'
                         className={({ isActive }) =>
-                            isActive ? "text-primary border-b-2 border-blue-600 transform transition-all duration-300 pb-1" : "text-gray-800 hover:text-primary"
+                            isActive ? "text-primary border-b-2 gradient-border-b transform transition-all duration-300 pb-1" : "text-white hover:text-primary"
                         }
                     >Blog</NavLink>
                 </div>
@@ -63,37 +63,36 @@ const Navbar = () => {
                 </button>
             </div>
             <div
-                className={`drawer fixed top-0 left-0 h-full bg-white shadow-md transform border w-2/3 ${drawerOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out md:hidden`}
+                className={`drawer fixed top-0 z-50 left-0 h-screen bg-white opacity-40 backdrop-blur-lg shadow-md transform border w-2/3 ${drawerOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out md:hidden`}
             >
                 <div className="p-4">
-                
-                    <div className="flex flex-col gap-4 text-gray-800">
+                    <div className="flex flex-col gap-4  text-white">
                         <NavLink
                             to='/'
                             onClick={toggleDrawer}
                             className={({ isActive }) =>
-                                isActive ? "text-primary border-b-2 border-blue-600 transform transition-all duration-300 pb-1" : ""
+                                isActive ? "text-primary border-b-2 gradient-border-b transform transition-all duration-300 pb-1" : ""
                             }
                         >Home</NavLink>
                         <NavLink
                             to='/about'
                             onClick={toggleDrawer}
                             className={({ isActive }) =>
-                                isActive ? "text-primary border-b-2 border-blue-600 transform transition-all duration-300 pb-1" : ""
+                                isActive ? "text-primary border-b-2 gradient-border-b transform transition-all duration-300 pb-1" : ""
                             }
                         >About Me</NavLink>
                         <NavLink
                             to='/projects'
                             onClick={toggleDrawer}
                             className={({ isActive }) =>
-                                isActive ? "text-primary border-b-2 border-blue-600 transform transition-all duration-300 pb-1" : ""
+                                isActive ? "text-primary border-b-2 gradient-border-b transform transition-all duration-300 pb-1" : ""
                             }
                         >Projects</NavLink>
                         <NavLink
                             to='/blog'
                             onClick={toggleDrawer}
                             className={({ isActive }) =>
-                                isActive ? "text-primary border-b-2 border-blue-600 transform transition-all duration-300 pb-1" : ""
+                                isActive ? "text-primary border-b-2 gradient-border-b transform transition-all duration-300 pb-1" : ""
                             }
                         >Blog</NavLink>
                     </div>

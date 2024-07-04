@@ -5,9 +5,9 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-gray-800 text-white py-6">
-            <div className="container mx-auto flex flex-col items-center">
-                <h3 className="text-2xl font-bold mb-4">Contact Me</h3>
+        <footer className=" text-white py-6 mt-10">
+            <div className="container mx-auto flex flex-col justify-start border-t items-center">
+                <h3 className="text-2xl font-bold mb-4 mt-5">Contact Me</h3>
                 <div className="flex gap-6">
                     <a href="https://www.facebook.com/faysal.sharker.140" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-purple-400">
                         <FontAwesomeIcon icon={faFacebook} />
