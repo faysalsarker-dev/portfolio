@@ -13,8 +13,9 @@ const Home = () => {
   // Define an array of objects containing data for each Example component
   const examples = [
     {
-      
       images: img,
+      link:'https://pattee-29048.web.app/',
+      github: 'https://github.com/faysalsarker-dev/Pattee',
       feature: [
         "Adopt Pet: Browse and adopt pets from various shelters and individuals.",
         "Add for Donation Pet: Post pets that need donations for their care.",
@@ -25,8 +26,9 @@ const Home = () => {
       title: "Pattee"
     },
     {
-      
+      github: 'https://github.com/faysalsarker-dev/Foodient',
       images: img2,
+      link:'https://foodient-ca6e1.web.app/',
       feature: [
         "Save Data: Once logged in, users can save their food items for future reference.",
         "Add Food Item: Users can add new food items to their list, along with details like name, description, etc.",
@@ -37,15 +39,16 @@ const Home = () => {
       title: "Foodient"
     },
     {
-      
+      github: 'https://github.com/faysalsarker-dev/Crafland',
       images: img3,
+      link:'https://agt-775ef.web.app/',
       feature: [
         "Secure Transactions: Utilizes Stripe for secure payment processing.",
         "User Authentication: Includes user login and registration features."
       ],
       text:
         "Foodient is a platform focused on food ordering and delivery, built with React, Node.js, Express, MongoDB, and Tailwind CSS. It enables users to browse restaurants, place orders, and manage their food preferences seamlessly.",
-      title: "Foodient"
+      title: "Crafland"
     }
   ];
 
@@ -54,15 +57,16 @@ const Home = () => {
       <Banner />
       <Skills />
       <About />
-     
       {examples.map((example, index) => (
         <Example
-          key={index} 
-          number={index+2}
+          key={index}
+          number={index + 2}
           images={example.images}
           feature={example.feature}
           text={example.text}
+          github={example.github}
           title={example.title}
+          link={example.link}
         />
       ))}
       <Education />

@@ -11,21 +11,21 @@ const Banner = () => {
         <div className="container relative flex md:flex-row flex-col-reverse justify-center items-center gap-8 mt-20 ">
             <motion.div
                 className='flex-1 hero-content'
-                initial={{ opacity: 0, x: -20 }}
+                initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1.0 }}
             >
                 <div className='text-white flex flex-col justify-center'>
                     <motion.h3
-                        initial={{ opacity: 0, y: -20 }}
+                        initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.2 }}
                         className='text-2xl font-semibold'
                     >
-                        Hi, it's Me <span className="secondary">Faysal Sarker</span>
+                        Hi, it&apos;s Me <span className="secondary">Faysal Sarker</span>
                     </motion.h3>
                     <motion.h2
-                        initial={{ opacity: 0, y: -20 }}
+                        initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.3 }}
                         className='text-5xl font-extrabold gradient'
@@ -33,31 +33,32 @@ const Banner = () => {
                         Web Developer
                     </motion.h2>
                     <motion.h4
-                        initial={{ opacity: 0, y: -20 }}
+                        initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.4 }}
                         className='text-2xl font-semibold'
                     >
+                        
                         <Typewriter
-                            words={[
-                                "Creating seamless web for the modern world!",
-                                "Bringing ideas to life with code.",
-                                "Let's build something amazing together!"
-                            ]}
-                            loop={0}
-                            cursor
-                            cursorStyle='_'
-                            typeSpeed={70}
-                            deleteSpeed={20}
-                            delaySpeed={1200}
-                        />
+                        words={[
+                            "Making innovative web experiences.",
+                            "Transforming ideas into reality.",
+                            "Building the future of the web."
+                        ]}
+                        loop={0}
+                        cursor
+                        cursorStyle='_'
+                        typeSpeed={100}
+                        deleteSpeed={50}
+                        delaySpeed={1000}
+                    />
                     </motion.h4>
                     <div className='my-4 flex gap-4 items-center'>
                         <a href={cv} download='cv' className='py-2 px-4 gradient-border text-primary font-semibold'>
                             Download CV
                         </a>
                         <motion.div
-                            initial={{ opacity: 0, y: 20 }}
+                            initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1.5 }}
                             whileHover={{ scale: 1.2 }}
@@ -69,7 +70,7 @@ const Banner = () => {
                             </a>
                         </motion.div>
                         <motion.div
-                            initial={{ opacity: 0, y: 20 }}
+                            initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1.7 }}
                             whileHover={{ scale: 1.2 }}
@@ -81,7 +82,7 @@ const Banner = () => {
                             </a>
                         </motion.div>
                         <motion.div
-                            initial={{ opacity: 0, y: 20 }}
+                            initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1.9 }}
                             whileHover={{ scale: 1.2 }}
@@ -97,7 +98,7 @@ const Banner = () => {
             </motion.div>
             <motion.div
                 className='flex-1 flex justify-center hero-content-image'
-                initial={{ opacity: 0, x: 20 }}
+                initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1.2 }}
             >

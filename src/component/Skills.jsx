@@ -30,7 +30,7 @@ const Skills = () => {
 
     return (
         <div className="container mx-auto my-20 skill-content relative">
-            <h2 className="text-center text-3xl font-bold mb-6">Technical Skills</h2>
+            <h2 className="text-center text-3xl text-primary uppercase font-bold mb-6">Technical Skills</h2>
             <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-6">
                 {skills.map((tech, idx) => (
                     <div

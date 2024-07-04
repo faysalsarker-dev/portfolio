@@ -1,13 +1,13 @@
 
 .secondary {
   background: linear-gradient(135deg, #03DAC5, #018786);
-  -webkit-background-clip: text;
+background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient{
   background: linear-gradient(135deg, #6200EE, #BB86FC);
-  -webkit-background-clip: text;
+background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .text-primary {
@@ -32,7 +32,7 @@
 
 
 .skill{
-  background:linear-gradient(135deg, rgba(98, 0, 238, 0.7), rgba(187, 134, 252, 0.7));
+  background:linear-gradient(135deg, rgba(99, 0, 238, 0.553), rgba(187, 134, 252, 0.7));
 
 }
 .btn{
@@ -127,6 +127,9 @@ h1, h2, h3, h4, h5, h6 {
   right: 5rem;
 }
 
+.drower{
+  background-color: #170B24;
+}
 .hero-content-div {
   width: 20.125rem;
   height: 20.125rem;
@@ -136,6 +139,10 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -1;
   filter: blur(2px);
 }
+
+
+
+
 
 
 .skill-content::after {
