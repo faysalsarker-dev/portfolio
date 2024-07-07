@@ -38,7 +38,11 @@ const Navbar = () => {
                         className={({ isActive }) =>
                             isActive ? "text-primary border-b-2 gradient-border-b transform transition-all duration-300 pb-1" : "text-white hover:text-primary"
                         }
-                    >Home</NavLink>
+                    >
+                        
+                        Home</NavLink>
+
+
                     <NavLink
                         to='/about'
                         className={({ isActive }) =>

@@ -15,14 +15,14 @@ const Banner = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1.0 }}
             >
-                <div className='text-white flex flex-col justify-center'>
+                <div className='text-white space-y-1 flex flex-col justify-center'>
                     <motion.h3
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.2 }}
-                        className='text-2xl font-semibold'
+                        className='text-3xl font-semibold'
                     >
-                        Hi, it&apos;s Me <span className="secondary">Faysal Sarker</span>
+                        Hi, it&apos;s Me <span className="gradient">Faysal Sarker</span>
                     </motion.h3>
                     <motion.h2
                         initial={{ opacity: 0, y: -50 }}
@@ -36,7 +36,7 @@ const Banner = () => {
                         initial={{ opacity: 0, y: -50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.4 }}
-                        className='text-2xl font-semibold'
+                        className='md:text-3xl text-xl mb-4 font-semibold'
                     >
                         
                         <Typewriter
@@ -53,47 +53,52 @@ const Banner = () => {
                         delaySpeed={1000}
                     />
                     </motion.h4>
-                    <div className='my-4 flex gap-4 items-center'>
-                        <a href={cv} download='cv' className='py-2 px-4 gradient-border text-primary font-semibold'>
-                            Download CV
-                        </a>
-                        <motion.div
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1.5 }}
-                            whileHover={{ scale: 1.2 }}
-                            whileTap={{ scale: 0.9 }}
-                            className="glow"
-                        >
-                            <a href="https://www.linkedin.com/in/faysalsarker-dev/" target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon className='gradient text-4xl' icon={faLinkedin} />
+
+
+              
+                </div>
+                <div className='my-5'>
+                        <div className=' flex gap-4 items-center'>
+                            <a href={cv} download='Faysal sarker Cartificate' className='py-2 px-4 gradient-border text-primary font-semibold'>
+                                Download CV
                             </a>
-                        </motion.div>
-                        <motion.div
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1.7 }}
-                            whileHover={{ scale: 1.2 }}
-                            whileTap={{ scale: 0.9 }}
-                            className="glow"
-                        >
-                            <a href="https://www.facebook.com/faysal.sharker.140/" target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon className='gradient text-4xl' icon={faFacebook} />
-                            </a>
-                        </motion.div>
-                        <motion.div
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1.9 }}
-                            whileHover={{ scale: 1.2 }}
-                            whileTap={{ scale: 0.9 }}
-                            className="glow"
-                        >
-                            <a href="https://www.instagram.com/faysal_sarker_/" target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon className='gradient text-4xl' icon={faInstagram} />
-                            </a>
-                        </motion.div>
-                    </div>
+                            <motion.div
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1.5 }}
+                                whileHover={{ scale: 1.2 }}
+                                whileTap={{ scale: 0.9 }}
+                                className="glow"
+                            >
+                                <a href="https://www.linkedin.com/in/faysalsarker-dev/" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon className='gradient text-4xl' icon={faLinkedin} />
+                                </a>
+                            </motion.div>
+                            <motion.div
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1.7 }}
+                                whileHover={{ scale: 1.2 }}
+                                whileTap={{ scale: 0.9 }}
+                                className="glow"
+                            >
+                                <a href="https://www.facebook.com/faysal.sharker.140/" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon className='gradient text-4xl' icon={faFacebook} />
+                                </a>
+                            </motion.div>
+                            <motion.div
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1.9 }}
+                                whileHover={{ scale: 1.2 }}
+                                whileTap={{ scale: 0.9 }}
+                                className="glow"
+                            >
+                                <a href="https://www.instagram.com/faysal_sarker_/" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon className='gradient text-4xl' icon={faInstagram} />
+                                </a>
+                            </motion.div>
+                        </div>
                 </div>
             </motion.div>
             <motion.div
