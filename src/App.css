@@ -40,6 +40,10 @@ background-clip: text;
   
 
 }
+
+.contact{
+  background-color: #0f0715a8;
+}
 .about-content::after {
   content: "";
   width: 20.125rem;
@@ -53,6 +57,7 @@ background-clip: text;
   
 
 }
+
 .contact-content::after {
   content: "";
   width: 20.125rem;
@@ -62,7 +67,8 @@ background-clip: text;
   background: linear-gradient(135deg, #BB86FC, #6200EE);
   filter: blur(225px);
   z-index: -1;
-  top: -5rem;
+  bottom: 3rem;
+  left: 20%;
  
 
 }
@@ -140,6 +146,16 @@ h1, h2, h3, h4, h5, h6 {
   filter: blur(2px);
 }
 
+/* Custom styles for React Quill */
+.ql-container {
+  border-radius: 0.375rem;
+  border: 1px solid #d1d5db;
+}
+.ql-toolbar {
+  border-radius: 0.375rem;
+  border: 1px solid #d1d5db;
+  margin-bottom: 1rem;
+}
 
 
 /* Media query for screens 768px wide or smaller */

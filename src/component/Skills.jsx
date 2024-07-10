@@ -1,4 +1,4 @@
-import React from 'react';
+
 import HTMLIcon from '../img/icons8-html-48.png';
 import CSSIcon from '../img/icons8-css-48.png';
 import JSIcon from '../img/icons8-javascript-48.png';
@@ -29,23 +29,25 @@ const Skills = () => {
     ];
 
     return (
-        <div className="container mx-auto my-20 skill-content relative">
-            <h2 className="text-center text-3xl text-primary uppercase font-bold mb-6">Technical Skills</h2>
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-6">
-                {skills.map((tech, idx) => (
-                    <div
-                        key={idx}
-                        className="rounded-lg overflow-hidden   shadow-md hover:shadow-lg hover:-translate-y-1 transition-transform duration-300"
-                    >
-                        <div className="skill  p-4">
-                            <img src={tech.image} alt={tech.name} className="h-16 mx-auto mb-4" />
-                            <p className="text-center">{tech.name}</p>
+     <section>
+            <div  className="container my-20 skill-content relative">
+                <h2 className="text-center text-3xl text-primary uppercase font-bold mb-6">Technical Skills</h2>
+                <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-6">
+                    {skills.map((tech, idx) => (
+                        <div
+                            key={idx}
+                            className="rounded-lg overflow-hidden   shadow-md hover:shadow-lg hover:-translate-y-1 transition-transform duration-300"
+                        >
+                            <div className="skill  p-4">
+                                <img src={tech.image} alt={tech.name} className="h-16 mx-auto mb-4" />
+                                <p className="text-center">{tech.name}</p>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
+               
             </div>
-           
-        </div>
+     </section>
     );
 };
 
